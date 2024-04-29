@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Porfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  </head>
+  <body>
+    <header class="bg-gray-800 text-white py-4 px-6">
+      <div class="flex flex-row justify-between items-center">
+        <h1 class="font-bold text-3xl">Welcome to my WebSite</h1>
+        <nav>
+          <ul class="flex flex-row space-x-4">
+            <!-- <li><a href="#" class="hover:bg-gray-700">Accueil</a></li> -->
+            <li>
+              <a href="./skills.html" class=" hover:bg-gray-700 font-bold">Skills</a>
+            </li>
+            <li><a href="./projects.html" class="hover:bg-gray-700 font-bold">Projects</a></li>
+            <li><a href="./contact.html" class="hover:bg-gray-700 font-bold">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Profile/Description -->
+    <div class="flex flex-row justify-between items-center p-40 ">
+      <section class="">
+        <h2 class="font-bold text-2xl flex justify-center">Hi, I'm ALIOUNE MANE</h2>
+        <p class="text-gray-600">
+          Full-Stack JavaScript Developer <br />Bringing ideas to life with
+          JavaScript and web technologies. <br />I'm passionate about creating
+          user-friendly and interactive web experiences.
+        </p><br>
+        <button class="bg-gray-800 p-3 text-white rounded-lg uppercase hover:opacity-90">Download CV</button>
+      </section>
+      <section class="w-96 h-96 flex justify-center items-center bg-gray-800 rounded-lg">
+        <img src="../image/alioune_prof.png" alt="profile" class="rounded-lg">
+    </section>
+    </div>
+    <!-- end Profile..... -->
+
+    <footer class="p-4 bg-gray-800 flex justify-center">
+      <a href="#" class="mr-6 text-red-300 text-2xl">
+        <i class="fa fa-instagram">
+        </i>
+      </a>
+      <a href="#" class="mr-6 text-blue-500 text-2xl">
+        <i class="fa fa-twitter">
+        </i>
+      </a>
+      <a href="https://www.linkedin.com/in/alioune-man%C3%A9-a8b15a1a4/?originalSubdomain=fr" class="mr-6 text-blue-700 text-2xl">
+        <i class="fa fa-linkedin">
+        </i>
+      </a>
+      <button id="skills" onclick="{pageskills()}">Skills</button>
+     </footer>
+   <script src="../script.js"></script>
+  </body>
+</html>
