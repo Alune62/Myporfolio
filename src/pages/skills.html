@@ -9,43 +9,95 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="bg-gray-800 text-white py-4 px-6">
         <div class="flex flex-row justify-between items-center">
           <h1 class="font-bold text-3xl">Welcome to my WebSite</h1>
           <nav>
-            <ul class="flex flex-row space-x-4">
-              <!-- <li><a href="#" class="hover:bg-gray-700">Accueil</a></li> -->
+            <ul class="flex flex-row space-x-20 mr-8 ">
+              <li><a href="./index.html" class="hover:bg-gray-700 font-bold">Home</a></li>
               <li>
                 <a href="./skills.html" class="hover:bg-gray-700 font-bold">Skills</a>
               </li>
               <li><a href="./projects.html" class="hover:bg-gray-700 font-bold">Projects</a></li>
-              <li><a href="#" class="hover:bg-gray-700 font-bold">Contacts</a></li>
+              <li><a href="./contact.html" class="hover:bg-gray-700 font-bold">Contacts</a></li>
             </ul>
           </nav>
         </div>
       </header>
-      <main class="p-8">
-        <h2 class="text-2xl font-bold mb-4">Skills</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div class="bg-gray-200 p-4 rounded-lg flex items-center">
-                <i class="fab fa-html5 text-4xl mr-2"></i>
-                HTML
+      <main class="p-6">
+        <h1 class="flex justify-center font-bold text-2xl text-gray-800">Skills</h1>
+        <div class="flex flex-row justify-center mt-3 gap-10 ">
+          <div id="frontend" class="container flex-grow ">  <h2 class="flex justify-center font-bold text-2xl text-gray-800">Frontend</h2>
+            <div class="p-1 grid grid-cols-2  rounded-lg bg-gray-300 h-auto">
+              <div class="flex flex-row items-center mt-10">
+                <img src="https://img.icons8.com/?size=48&id=20909&format=png" class="w-20">
+                <p class="ml-4 text-gray-800"><strong>HTML5</strong></p>
+              </div>
+              <div class="flex flex-row items-center mt-10 ml-52">
+                <img src="https://img.icons8.com/?size=48&id=7gdY5qNXaKC0&format=png" class="w-20">
+                <p class="ml-4 text-gray-800 "><strong>CSS</strong></p>
+              </div>
+              <div class="flex flex-row items-center mt-10">
+                <img src="https://img.icons8.com/?size=48&id=4PiNHtUJVbLs&format=png" class="w-20">
+                <p class="ml-4 text-gray-800 "><strong>TAILWIND CSS</strong></p>
+              </div>
+              <div class="flex flex-row items-center mt-10 ml-52">
+                <img src="https://img.icons8.com/?size=48&id=108784&format=png" class="w-20">
+                <p class="ml-4 text-gray-800 "><strong>JAVASCRIPT</strong></p>
+              </div>
+              <div class="flex flex-row items-center mt-10">
+                <img src="https://img.icons8.com/?size=48&id=123603&format=png" class="w-20">
+                <p class="ml-4 text-gray-800 "><strong>REACT</strong></p>
+              </div>
+              <div class="flex flex-row items-center mt-10 ml-52">
+                <img src="https://image.shutterstock.com/image-vector/react-native-dark-poster-blue-260nw-1052275325.jpg" class="w-20">
+                <p class="ml-4 text-gray-800 "><strong>REACT NATIVE</strong></p>
+              </div>
+              <div class="flex flex-row items-center mt-8">
+                <img src="https://img.icons8.com/?size=48&id=jD-fJzVguBmw&format=png" class="w-20">
+                <p class="ml-4 text-gray-800 "><strong>REDUX</strong></p>
+              </div>
+              </div>
+          </div>
+          <div id="backend" class="container flex-grow">  <h2 class="flex justify-center font-bold text-2xl text-gray-800">Backend</h2>
+            <div class="p-1 grid grid-cols-2 rounded-lg bg-gray-300">
+            <div class="flex flex-row items-center mt-10 ml-20">
+              <img src="https://img.icons8.com/?size=48&id=54087&format=png" class="w-20">
+              <p class="ml-4 text-gray-800"><strong>NODE JS</strong></p>
             </div>
-            <div class="bg-gray-200 p-4 rounded-lg flex items-center">
-                <i class="fab fa-css3 text-4xl mr-2"></i>
-                CSS
+            <div class="flex flex-row items-center mt-10 ml-40">
+              <img src="https://img.icons8.com/?size=48&id=SDVmtZ6VBGXt&format=png" class="w-20">
+              <p class="ml-4 text-gray-800"><strong>EXPRESS JS</strong></p>
             </div>
-            <div class="bg-gray-200 p-4 rounded-lg flex items-center">
-                <i class="fab fa-js text-4xl mr-2"></i>
-                JavaScript
+            <div class="flex flex-row items-center mt-10 ml-20">
+              <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/45/MongoDB-Logo.svg/1280px-MongoDB-Logo.svg.png" class="w-20">
+              <p class="ml-4 text-gray-800"><strong>MONGO DB</strong></p>
             </div>
-            <!-- Ajoute d'autres compétences de cette manière -->
+            <div class="flex flex-row items-center mt-10 ml-40">
+              <img src="https://w7.pngwing.com/pngs/169/258/png-transparent-mongodb-compass-macos-bigsur-icon-thumbnail.png" class="w-20">
+              <p class="ml-4 text-gray-800"><strong>COMPASS</strong></p>
+            </div>
+            <div class="flex flex-row items-center mt-10 ml-20">
+              <img src="https://img.icons8.com/?size=48&id=62452&format=png" class="w-20">
+              <p class="ml-4 text-gray-800"><strong>FIREBASE</strong></p>
+            </div>
+            <div class="flex flex-row items-center mt-10 ml-40">
+              <img src="https://cloudinary-res.cloudinary.com/image/upload/website/cloudinary_web_favicon.png" class="w-20">
+              <p class="ml-4 text-gray-800"><strong>CLOUDINARY</strong></p>
+            </div>
+            <div class="flex flex-row items-center mt-10 ml-20">
+              <img src="https://img.icons8.com/?size=48&id=UFXRpPFebwa2&format=png" class="w-20">
+              <p class="ml-4 text-gray-800"><strong>MYSQL</strong></p>
+            </div>
+          </div>
         </div>
-    </main>
+      </div>
+      </main>
 
-      <!-- <footer class="p-4 bg-gray-800 flex justify-center">
+      <footer class="p-2 bg-gray-800 flex justify-center">
         <a href="#" class="mr-6 text-red-300 text-2xl">
           <i class="fa fa-instagram">
           </i>
@@ -59,7 +111,8 @@
           </i>
         </a>
         
-       </footer> -->
+       </footer>
+       <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
        <script src="../script.js"></script>
 </body>
 </html>

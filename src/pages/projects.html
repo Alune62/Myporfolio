@@ -15,8 +15,8 @@
       <div class="flex flex-row justify-between items-center">
         <h1 class="font-bold text-3xl">Welcome to my WebSite</h1>
         <nav>
-          <ul class="flex flex-row space-x-4">
-            <!-- <li><a href="#" class="hover:bg-gray-700">Accueil</a></li> -->
+          <ul class="flex flex-row space-x-20 mr-8 ">
+            <li><a href="index.html" class="hover:bg-gray-700 font-bold">Home</a></li>
             <li>
               <a href="./skills.html" class=" hover:bg-gray-700 font-bold">Skills</a>
             </li>
@@ -26,11 +26,91 @@
         </nav>
       </div>
     </header>
-
-
+    <main class="p-6">
+      <h1 class="flex justify-center font-bold text-2xl text-gray-800">
+        PROJECTS
+      </h1>
+      <div class="flex flex-row justify-center mt-3">
+        <div class="p-1 rounded-lg flex-grow h-auto ">
+          <div class="grid grid-cols-3 gap-20 rounded-lg">
+             <div id="weather" class="flex flex-col items-center bg-gray-100 rounded-lg">
+            <img
+              src="../image/weatherApp.png" alt="weatherApp"
+              class="w-full h-56  rounded-lg"
+            />
+            <div class="flex-1">
+              <button class="ml-4 bg-gray-800 mt-4  text-white font-bold rounded-lg p-2">My Weather</button>
+            <p class="mt-4 text-gray-800">Application web avancée de prévisions météorologiques utilisant React, Express, Mongoose et MongoDb. Intégration de
+              fonctionnalités avancées telles que la recherche par ville et l'affichage des prévisions météorologiques en temps réel.
+              </p>
+            </div>
+          </div>
+             <div id="morning" class="flex flex-col items-center bg-gray-100 rounded-lg">
+            <img
+              src="../image/MorningNews.png" alt="MorningNews"
+              class="w-full h-56  rounded-lg"
+            />
+            <div class="flex-1">
+              <button class="ml-4 bg-gray-800 mt-4  text-white font-bold rounded-lg p-2">MorningNews</button>
+            <p class="mt-4 text-gray-800">Application web pour la lecture d'articles d'actualité. Utilisation de React, Redux, Nodejs, Express, Mongoose, MongoDB pour la construction de
+              l'interface utilisateur et intégration d'une API d'actualités pour afficher des articles récents.
+              </p>
+            </div>
+          </div>
+          <div  class="flex flex-col items-center bg-gray-100 rounded-lg">
+            <video
+              src="../image/Staynomad gestion.mov"
+              alt="StayNomad"
+              class="w-full h-56 rounded-lg"
+              controls
+            ></video>
+            <div id="staynomad" class="flex-1">
+              <button class="ml-4 bg-gray-800 mt-4 text-white font-bold rounded-lg p-2">StayNomad Gestion</button>
+              <p class="mt-4 text-gray-800">Conception et développement d'une application mobile inspirée d'Airbnb. Utilisationde React Native et Redux pour la construction de
+                l'interface utilisateur, Nodejs, Express, Mongoose et MongoDB pour la gestion des données, garantissant ainsi une expérience utilisateur
+                fluide et une manipulation efficace des informations.</p>
+            </div>
+          </div>
+          <div id="moviz" class="flex flex-col items-center bg-gray-100 rounded-lg ">
+            <img
+              src="../image/moviz.png" alt="movizApp"
+              class="w-full h-56  rounded-lg"
+            />
+            <div class="flex-1">
+              <button class="ml-4 bg-gray-800 mt-4  text-white font-bold rounded-lg p-2">My Moviz</button>
+            <p class="mt-4 text-gray-800">Une plateforme interactive développée avec React, Redux, MongoDB, Express et Node.js. Cette application offre une expérience fluide aux utilisateurs pour explorer et découvrir des films.
+              </p>
+            </div>
+          </div>
+          <div id="mails" class="flex flex-col items-center bg-gray-100 rounded-lg">
+            <img
+              src="../image/mailApp.png" alt="mailApp"
+              class="w-full h-56  rounded-lg"
+            />
+            <div class="flex-1">
+              <button class="ml-4 bg-gray-800 mt-4  text-white font-bold rounded-lg p-2">My Mails</button>
+            <p class="mt-4 text-gray-800">Une interface simple et intuitive réalisée en HTML, CSS et JavaScript. My Mails permet aux utilisateurs de gérer efficacement leur messagerie électronique, offrant une expérience utilisateur fluide et agréable
+              </p>
+            </div>
+          </div>
+          <div id="pokedex" class="flex flex-col items-center bg-gray-100 rounded-lg ">
+            <img
+              src="https://raw.githubusercontent.com/sleduardo20/pokedex/0671af442dff1d8f7141e49eb83b438885bbc9e9/public/img/logo.svg" alt="pokedex"
+              class="w-full h-56  rounded-lg"
+            />
+            <div class="flex-1">
+              <button class="ml-4 bg-gray-800 mt-4  text-white font-bold rounded-lg p-2">MorningNews</button>
+            <p class="mt-4 text-gray-800">Réalisée en HTML, CSS et JavaScript. Pokedex présente une liste de Pokémon et un bouton 'Next' qui permet de faire défiler les Pokémon un par un. Cette application offre une expérience ludique pour les amateurs de Pokémon
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+    </main>
     
 
-    <!-- <footer class="p-4 bg-gray-800 flex justify-center">
+    <footer class="p-4 bg-gray-800 flex justify-center">
       <a href="#" class="mr-6 text-red-300 text-2xl">
         <i class="fa fa-instagram">
         </i>
@@ -44,7 +124,7 @@
         </i>
       </a>
       
-     </footer> -->
+     </footer>
    <script src="../script.js"></script>
   </body>
 </html>
