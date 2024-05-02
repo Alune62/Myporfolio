@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 const weather = document.querySelector('#weather')
 weather.addEventListener('click', function() {
     window.location.href = `https://weather-app-front-five.vercel.app/`
