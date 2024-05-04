@@ -11,22 +11,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <header class="bg-gray-800 text-white py-4 px-6">
-        <div class="flex flex-row justify-between items-center">
-          <h1 class="font-bold text-3xl">Welcome to my Porfolio</h1>
-          <nav>
-            <ul class="flex flex-row space-x-20 mr-8 ">
-              <li><a href="../../index.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Home</a></li>
-              <li>
-                <a href="./skills.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Skills</a>
-              </li>
-              <li><a href="./projects.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Projects</a></li>
-              <li><a href="./contact.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Contacts</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+  <header class="bg-gray-800 text-white py-4 px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center">
+        <h1 class="font-bold text-3xl mr-4">Welcome to my Portfolio</h1>
+        <button class="text-white focus:outline-none md:hidden toggle-button">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+      <nav id="navbar" class="mt-4 md:mt-0 hidden md:flex">
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+          <li>
+            <a href="../../index.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Home</a>
+          </li>
+          <li>
+            <a href="./skills.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Skills</a>
+          </li>
+          <li><a href="./projects.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Projects</a></li>
+          <li><a href="./contact.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
       <main class="p-4">
         <h1 class="flex justify-center font-bold text-2xl text-gray-800">Skills</h1>
         <div class="flex flex-row justify-center mt-3 gap-10 ">
@@ -62,7 +69,8 @@
               </div>
               </div>
           </div>
-          <div id="backend" class="container flex-grow ">  <h2 class="flex justify-center font-bold text-2xl text-gray-800">Backend</h2>
+          <div id="backend" class="container flex-grow "> 
+            <h2 class="flex justify-center font-bold text-2xl text-gray-800">Backend</h2>
             <div class="p-1 grid grid-cols-2 rounded-lg bg-gray-300">
             <div class="flex flex-row items-center mt-10 ml-20">
               <img src="https://img.icons8.com/?size=48&id=54087&format=png" class="w-20">

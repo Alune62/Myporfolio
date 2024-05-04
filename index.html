@@ -1,69 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Porfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  </head>
-  <body class="">
-    <header class="bg-gray-800 text-white py-4 px-6">
-      <div class="flex flex-row justify-between items-center">
-        <h1 class="font-bold text-3xl">Welcome to my Porfolio</h1>
-        <nav>
-          <ul class="flex flex-row space-x-20 mr-8 ">
-            <!-- <li><a href="#" class="hover:bg-gray-700 active:checked:">Accueil</a></li> -->
-            <li>
-              <a href="./src/pages/skills.html" class=" rounded-lg hover:bg-gray-500 p-2 font-bold">Skills</a>
-            </li>
-            <li><a href="./src/pages/projects.html" class=" rounded-lg hover:bg-gray-500 p-2 font-bold">Projects</a></li>
-            <li><a href="./src/pages/contact.html" class=" rounded-lg hover:bg-gray-500 p-2 font-bold">Contacts</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+  <header class="bg-gray-800 text-white py-4 px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center">
+        <h1 class="font-bold text-3xl mr-4">Welcome to my Portfolio</h1>
+        <button class="text-white focus:outline-none md:hidden toggle-button">
+          <i class="fa fa-bars"></i>
+        </button>
       </div>
-    </header>
+      <nav id="navbar" class="mt-4 md:mt-0 hidden md:flex">
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+          <li>
+            <a href="./src/pages/skills.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Skills</a>
+          </li>
+          <li><a href="./src/pages/projects.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Projects</a></li>
+          <li><a href="./src/pages/contact.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-
-    <!-- Profile/Description -->
-    <div class="flex flex-row  items-center p-20 ">
-      <div class="flex flex-col justify-center">
-        <h2 class="font-bold text-2xl flex justify-center text-gray-800">Hi, I'm ALIOUNE MANE</h2>
-        <p class="flex justify-center text-gray-800">
-          Full-Stack JavaScript Developer</p>
-        <p class="flex justify-center text-gray-800">
-          Bringing ideas to life with
-          JavaScript and web technologies.</p>
-        <p class="flex justify-center text-gray-800">
-          I'm passionate about creating
-          user-friendly and interactive web experiences.</p> 
+  <main class="flex-grow flex flex-col-reverse md:flex-row justify-center items-center p-6 md:p-20">
+    <div class="flex-1 md:mr-12">
+      <div class="flex flex-col justify-center  text-center md:text-left md:w-1/2 md:mx-auto">
+        <h2 class="flex justify-center font-bold text-2xl text-gray-800">Hi, I'm ALIOUNE MANE</h2>
+        <p class="flex justify-center text-gray-800">Full-Stack JavaScript Developer</p>
+        <p class="flex justify-center text-gray-800">Bringing ideas to life with JavaScript and web technologies.</p>
+        <p class="flex justify-center text-gray-800">I'm passionate about creating user-friendly and interactive web experiences.</p>
         <br>
-        <button id="resume" class="bg-gray-800 p-3 text-white rounded-lg uppercase hover:opacity-90">Download CV</button>
+        <button id="resume" class="w-full bg-gray-800 p-3 text-white rounded-lg uppercase hover:opacity-90">Download CV</button>
       </div>
-      <div class="w-96 h-96 flex justify-center ml-auto items-center bg-gray-800 rounded-lg">
+    </div>
+    <div class="flex-1">
+      <div class="md:w-1/2 mt-6 md:mt-0 mx-auto flex justify-center items-center bg-gray-800 rounded-lg">
         <img src="/src/image/alioune_prof.png" alt="profile" class="rounded-lg">
+      </div>
     </div>
-    </div>
-    <!-- end Profile..... -->
+  </main>
+  
 
-    <footer class="p-4 mt-12 bg-gray-800 flex justify-center">
+  <footer class="p-4 bg-gray-800 text-white flex-shrink-0">
+    <div class="flex justify-center">
       <a href="https://www.instagram.com/papa_alune_mane/" class="mr-6 text-red-300 text-2xl">
-        <i class="fa fa-instagram">
-        </i>
+        <i class="fa fa-instagram"></i>
       </a>
       <a href="https://twitter.com/MANEALIOUNE1" class="mr-6 text-blue-500 text-2xl">
-        <i class="fa fa-twitter">
-        </i>
+        <i class="fa fa-twitter"></i>
       </a>
       <a href="https://www.linkedin.com/in/alioune-man%C3%A9-a8b15a1a4/?originalSubdomain=fr" class="mr-6 text-blue-700 text-2xl">
-        <i class="fa fa-linkedin">
-        </i>
+        <i class="fa fa-linkedin"></i>
       </a>
-     </footer>
-   <script src="./src/script.js"></script>
-   <script src="./src/cvScript.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="./src/script.js"></script>
+  <script src="./src/cvScript.js"></script>
+</body>
 </html>

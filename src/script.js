@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.getElementById("navbar");
+    const toggleButton = document.querySelector(".toggle-button");
+
+    toggleButton.addEventListener("click", function() {
+      navbar.classList.toggle("hidden");
+    });
+  });
+
+
 
 const weather = document.querySelector('#weather')
 weather.addEventListener('click', function() {
