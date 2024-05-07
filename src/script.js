@@ -37,6 +37,10 @@ const mails = document.querySelector('#mails')
 mails.addEventListener('click', function() {
     window.location.href ='https://mymail-app.vercel.app/'
 })
+const todos = document.querySelector('#todoList')
+todos.addEventListener('click', function() {
+    window.location.href ='https://todo-list-react-two-pi.vercel.app/'
+})
 
 
 
