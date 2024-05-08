@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <header class="w-full z-50 bg-gray-800 text-white py-4 px-6 shadow fixed">
+        <div class="flex flex-row justify-between items-center md:flex">
+            <h1 class="px-4 py-2 text-2xl font-bold">Responsive Design</h1>
+            <button id="menuToggle" class="text-white md:hidden"><i class="fa fa-bars"></i></button>
+            <nav id="navbar" class="navBar md:flex md:items-center md:justify-end hidden ">
+                <ul class="flex flex-col md:flex-row gap-10 font-bold cursor-pointer">
+                    <li class="px-4 py-2 rounded-md hover:bg-gray-600 active:bg-gray-600"><a href="./responsive.html">Home</a></li>
+                    <li class="px-4 py-2 rounded-md hover:bg-gray-600 active:bg-gray-600"><a href="#">About</a></li>
+                    <li class="px-4 py-2 rounded-md hover:bg-gray-600 active:bg-gray-600"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+<script>
+    document.getElementById("menuToggle").addEventListener("click", function() {
+        var navbar = document.getElementById("navbar");
+        navbar.classList.toggle("hidden");
+    });
+</script>
+</html>
