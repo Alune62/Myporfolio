@@ -3,29 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Responsive</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
-    <header class="w-full z-50 bg-gray-800 text-white py-4 px-6 shadow fixed">
-        <div class="flex flex-row justify-between items-center md:flex">
-            <h1 class="px-4 py-2 text-2xl font-bold">Responsive Design</h1>
-            <button id="menuToggle" class="text-white md:hidden"><i class="fa fa-bars"></i></button>
-            <nav id="navbar" class="navBar md:flex md:items-center md:justify-end hidden ">
-                <ul class="flex flex-col md:flex-row gap-10 font-bold cursor-pointer">
-                    <li class="px-4 py-2 rounded-md hover:bg-gray-600 active:bg-gray-600"><a href="./responsive.html">Home</a></li>
-                    <li class="px-4 py-2 rounded-md hover:bg-gray-600 active:bg-gray-600"><a href="#">About</a></li>
-                    <li class="px-4 py-2 rounded-md hover:bg-gray-600 active:bg-gray-600"><a href="#">Contact</a></li>
+    <header class="bg-gray-800 text-white py-4 px-6">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <h1 class="font-bold text-3xl mr-4">Welcome to my Portfolio</h1>
+            </div>
+            <div class="flex items-center gap-6">
+                <i onclick="onToggleMenu(this)" name="menu" class="fa fa-bars text-3xl cursor-pointer md:hidden"></i>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-gray-800 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a href="./src/pages/skills.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Skills</a>
+                    </li>
+                    <li>
+                        <a href="./src/pages/projects.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./src/pages/contact.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Contact</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
     </header>
+
 </body>
 <script>
-    document.getElementById("menuToggle").addEventListener("click", function() {
-        var navbar = document.getElementById("navbar");
-        navbar.classList.toggle("hidden");
-    });
+     const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
 </script>
 </html>

@@ -1,11 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const navbar = document.getElementById("navbar");
-    const toggleButton = document.querySelector(".toggle-button");
+const navLinks = document.querySelector('.nav-links')
+function onToggleMenu(e){
+    e.name = e.name === 'menu' ? 'close' : 'menu'
+    navLinks.classList.toggle('top-[9%]')
+}
 
-    toggleButton.addEventListener("click", function() {
-      navbar.classList.toggle("hidden");
-    });
-  });
+onToggleMenu()
 
 
 
