@@ -1,11 +1,8 @@
-const navLinks = document.querySelector('.nav-links')
-function onToggleMenu(e){
-    e.name = e.name === 'menu' ? 'close' : 'menu'
-    navLinks.classList.toggle('top-[9%]')
-}
+const navLinks = document.querySelector('#nav-links')
 
-onToggleMenu()
-
+document.querySelector('#button-menu').addEventListener('click', function(){
+    navLinks.classList.toggle('hidden')
+})
 
 
 const weather = document.querySelector('#weather')
