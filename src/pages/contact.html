@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>My Porfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -11,65 +12,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   </head>
   <body class="bg-gray-100 flex flex-col min-h-screen">
-    <header class="bg-gray-800 text-white py-4 px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="flex items-center">
-          <h1 class="font-bold text-3xl mr-4">Welcome to my Portfolio</h1>
-          <button class="text-white focus:outline-none md:hidden toggle-button">
-            <i class="fa fa-bars"></i>
-          </button>
+    <header class="flex items-center bg-gray-800 text-white py-4 px-6">
+      <nav
+        id="navbar"
+        class="flex justify-between items-center w-[92%] mx-auto"
+      >
+        <div class="">
+          <h1 class="text-3xl font-bold">Alioune.</h1>
         </div>
-        <nav id="navbar" class="mt-4 md:mt-0 hidden md:flex">
-          <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+        <div
+          id="nav-links"
+          class="md:block hidden md:static absolute left-0 top-[10%] w-full bg-gray-800"
+        >
+          <ul
+            class="flex md:flex-row flex-col items-center md:items-center md:justify-end md:gap-[4vw] gap-8"
+          >
             <li>
-              <a href="../../index.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Home</a>
+              <a
+                href="../../index.html"
+                class="rounded-lg hover:bg-gray-500 p-2 font-bold"
+                >Home</a>
             </li>
             <li>
-              <a href="./skills.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Skills</a>
+              <a
+                href="./skills.html"
+                class="rounded-lg hover:bg-gray-500 p-2 font-bold"
+                >Skills</a
+              >
             </li>
-            <li><a href="./projects.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Projects</a></li>
-            <li><a href="./contact.html" class="rounded-lg hover:bg-gray-500 p-2 font-bold">Contacts</a></li>
+            <li>
+              <a
+                href="./projects.html"
+                class="rounded-lg hover:bg-gray-500 p-2 font-bold"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="rounded-lg hover:bg-gray-500 p-2 font-bold"
+                >Contacts</a
+              >
+            </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
+      <button id="button-menu" class="text-white md:hidden">
+        <i class="fa fa-bars"></i>
+      </button>
     </header>
 
-    <main class="p-6">
-      <div id="contact-section" class="contact-section flex flex-col justify-center items-center py-12 bg-gray-100 w-96 mx-auto h-96">
-        <h2 class="font-bold text-2xl">Contact</h2>
-        <div class="contact-info flex flex-col space-y-4 mt-6">
-          <div class="contact-item  justify-center flex items-center space-x-4">
-            <h3 class="text-gray-800 text-lg font-bold ">ALIOUNE MANE</h3>
-          </div>
-          <div class="contact-item flex justify-center items-center space-x-4">
-            <p><strong>Email</strong></p>
-            <a href="mailto:seydina.alioune9319@gmail.com" class="text-blue-500 hover:text-blue-700 text-lg underline">seydina.alioune9319@gmail.com</a>
-          </div>
-          <div class="contact-item flex justify-center items-center space-x-4">
-          <p><strong>Phone</strong></p>
-            <a href="tel:+33766666666" class="text-gray-800 hover:text-gray-600 text-lg">(+33) 7 54 10 21 01</a>
-          </div>
+    <main class="flex-grow p-6">
+        <div id="contact-section" class="contact-section flex flex-col justify-center items-center py-12 bg-gray-100 max-w-3xl mx-auto">
+            <h2 class="font-bold text-2xl">Contact</h2>
+            <div class="contact-info flex flex-col space-y-4 mt-6">
+                <div class="contact-item flex justify-center items-center space-x-4">
+                    <h3 class="text-gray-800 text-lg font-bold ">ALIOUNE MANE</h3>
+                </div>
+                <div class="contact-item flex justify-center items-center space-x-4">
+                    <p><strong>Email</strong></p>
+                    <a href="mailto:seydina.alioune9319@gmail.com" class="text-blue-500 hover:text-blue-700 text-lg underline">seydina.alioune9319@gmail.com</a>
+                </div>
+                <div class="contact-item flex justify-center items-center space-x-4">
+                    <p><strong>Phone</strong></p>
+                    <a href="tel:+33754102101" class="text-gray-800 hover:text-gray-600 text-lg">(+33) 7 54 10 21 01</a>
+                </div>
+            </div>
         </div>
-        
-      </div>
-      
-      
     </main>
-    <footer class="p-4 mt-40 bg-gray-800 flex justify-center">
-      <a href="https://www.instagram.com/papa_alune_mane/" class="mr-6 text-red-300 text-2xl">
-        <i class="fa fa-instagram">
-        </i>
-      </a>
-      <a href="https://twitter.com/MANEALIOUNE1" class="mr-6 text-blue-500 text-2xl">
-        <i class="fa fa-twitter">
-        </i>
-      </a>
-      <a href="https://www.linkedin.com/in/alioune-man%C3%A9-a8b15a1a4/?originalSubdomain=fr" class="mr-6 text-blue-700 text-2xl">
-        <i class="fa fa-linkedin">
-        </i>
-      </a>
-      
-     </footer>
-   <script src="../script.js"></script> 
-  </body>
+
+    <footer class="p-4 bg-gray-800 text-white">
+        <div class="flex justify-center">
+            <a href="https://www.instagram.com/papa_alune_mane/" class="mr-6 text-red-300 text-2xl">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/MANEALIOUNE1" class="mr-6 text-blue-500 text-2xl">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alioune-man%C3%A9-a8b15a1a4/?originalSubdomain=fr" class="mr-6 text-blue-700 text-2xl">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="../script.js"></script>
+</body>
 </html>
