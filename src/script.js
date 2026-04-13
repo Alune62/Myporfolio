@@ -47,4 +47,9 @@ pokedex.addEventListener('click', function () {
     window.location.href='https://pokedex-psi-three-47.vercel.app/'
 })
 
+const home = document.querySelector('#name')
+console.log(home)
 
+home.addEventListener('click',function () {
+    window.location.href="/"
+})

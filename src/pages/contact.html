@@ -18,7 +18,7 @@
         class="flex justify-between items-center w-[92%] mx-auto"
       >
         <div class="">
-          <h1 class="text-3xl font-bold">Alioune.</h1>
+           <button id="name" class="text-3xl font-bold">Alioune.</button>
         </div>
         <div
           id="nav-links"
@@ -97,4 +97,17 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="../script.js"></script>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const home = document.querySelector('#name');
+
+    if (home) {
+      console.log(home);
+
+      home.addEventListener('click', function () {
+        window.location.href = "../../index.html";
+      });
+    }
+  });
+</script>
 </html>
